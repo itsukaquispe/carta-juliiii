@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>De Joshua para Juliii ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+    background:linear-gradient(135deg,#fff0f5,#ffe4ec,#ffd6e7);
+    font-family:'Cormorant Garamond', serif;
+    overflow-x:hidden;
+    position:relative;
+}
+
+body::before{
+    content:"❤️ 💖 💕 ❤️ 💖 💕 ❤️";
+    position:fixed;
+    top:20px;
+    width:100%;
+    text-align:center;
+    opacity:.08;
+    font-size:3rem;
+}
+
+body::after{
+    content:"💕 ❤️ 💖 💕 ❤️ 💖 💕";
+    position:fixed;
+    bottom:20px;
+    width:100%;
+    text-align:center;
+    opacity:.08;
+    font-size:3rem;
+}
+
+@keyframes aparecerCarta{
+    0%{
+        opacity:0;
+        transform:translateY(40px) scale(0.95);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
+
+.carta{
+    width:100%;
+    max-width:900px;
+    background:white;
+    padding:60px;
+    border-radius:30px;
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+    border:1px solid rgba(0,0,0,.08);
+    position:relative;
+    animation:aparecerCarta 1.8s ease-out;
+}
+
+.carta::before{
+    content:"❤";
+    position:absolute;
+    top:20px;
+    left:25px;
+    color:#db2777;
+    font-size:2rem;
+}
+
+.carta::after{
+    content:"❤";
+    position:absolute;
+    bottom:20px;
+    right:25px;
+    color:#db2777;
+    font-size:2rem;
+}
+
+.titulo{
+    text-align:center;
+    font-family:'Great Vibes', cursive;
+    font-size:4.5rem;
+    color:#000;
+    margin-bottom:15px;
+}
+
+.decoracion{
+    text-align:center;
+    color:#db2777;
+    font-size:1.3rem;
+    margin-bottom:35px;
+}
+
+p{
+    font-size:1.45rem;
+    line-height:1.95;
+    color:#444;
+    text-align:justify;
+    margin-bottom:22px;
+}
+
+.cierre{
+    text-align:center;
+    margin-top:50px;
+    font-family:'Great Vibes', cursive;
+    font-size:3rem;
+    color:#be185d;
+}
+
+.corazon{
+    display:block;
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+audio{
+    display:none;
+}
+
+@media(max-width:768px){
+
+    .carta{
+        padding:35px;
+    }
+
+    .titulo{
+        font-size:3rem;
+    }
+
+    p{
+        font-size:1.2rem;
+    }
+
+    .cierre{
+        font-size:2.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="carta">
+
+    <h1 class="titulo">De Joshua para Juliii ❤️</h1>
+
+    <div class="decoracion">
+        ━━━━━━━━━━ ❤️ ━━━━━━━━━━
+    </div>
+
+    <p>
+        Amar no es solo un sentimiento pasajero. Es una decisión.
+        La monogamia no es una imposición y una simple tradición,
+        sino una forma de amar que elige la profundidad sobre la cantidad.
+    </p>
+
+    <p>
+        La monogamia es un acto de valentía: es mirar a una persona y decir
+        «podría perderme en mil caminos pero elijo caminar contigo»,
+        no porque sea la única opción, sino porque en esa elección encontramos sentido.
+    </p>
+
+    <p>
+        No se trata de la ausencia de deseos por otros, sino de la presencia
+        de un deseo más grande: el de compartir, crecer y construir con alguien
+        a quien conoces en todas sus facetas, incluso en las más difíciles.
+    </p>
+
+    <p>
+        La monogamia no es la negación de la libertad, sino la libertad de elegir
+        a alguien una y otra vez a pesar del tiempo y a pesar de las dificultades,
+        porque el amor monógamo no se trata de encontrar a la persona perfecta,
+        sino de elegir imperfectamente cada día a la misma persona.
+    </p>
+
+    <p>
+        Y en esa elección diaria, en los momentos de alegría y en los de lucha,
+        en los días buenos y en los difíciles, se encuentra la verdadera magia
+        del amor: la certeza de que pase lo que pase, seguimos eligiéndonos.
+    </p>
+
+    <div class="cierre">
+        <span class="corazon">❤️</span>
+        Y yo te escojo a ti... ;))
+    </div>
+
+</div>
+
+<audio id="musica" loop>
+    <source src="Gongoli (2012).mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const musica = document.getElementById("musica");
+
+musica.volume = 0.35;
+
+window.addEventListener("click", () => {
+    musica.currentTime = 88;
+    musica.play();
+}, { once: true });
+</script>
+
+</body>
+</html>
